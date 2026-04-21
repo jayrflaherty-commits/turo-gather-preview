@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gather × Turo | AI Research Results Preview</title>
+<title>Gather × turo | AI Research Results Preview</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
@@ -208,9 +208,9 @@ section{padding:88px 48px;}
 <section class="hero">
   <div class="hero-grid-bg"></div>
   <div class="hero-inner">
-    <div class="hero-badge"><span class="dot"></span> Turo Host Experience Team · Research Preview</div>
+    <div class="hero-badge"><span class="dot"></span> Turo Product Team · Research Preview</div>
     <h1>What <em>real results</em> look like from Gather</h1>
-    <p class="hero-sub">These are synthetic results built to preview the kind of host-side insight Gather delivers — from onboarding friction to churn signals to pricing sensitivity — all within 7 days of project kick-off.</p>
+    <p class="hero-sub">These are synthetic results generated to preview the kind of insight, depth, and deliverables Gather produces for Turo — from guest trust mechanics to host retention drivers, all within 7 days of project kick-off.</p>
     <div class="hero-stats">
       <div class="hero-stat"><div class="num">5 studies</div><div class="lbl">Scoped for Turo</div></div>
       <div class="hero-stat"><div class="num">n=300–500</div><div class="lbl">Per study</div></div>
@@ -220,305 +220,290 @@ section{padding:88px 48px;}
 </section>
 
 <!-- ═══════════════════════════════════════════════════
-     STUDY 1: HOST ONBOARDING CONCEPT TESTING
+     STUDY 1: CONCEPT TESTING — NEW FEATURES
      ═══════════════════════════════════════════════════ -->
 <section class="study-section" style="background:var(--surface);">
   <div class="container">
     <div class="study-header">
       <div class="study-icon" style="background:rgba(0,61,165,0.08);">🧪</div>
       <div>
-        <h2>Host Onboarding Concept Testing</h2>
-        <div class="study-tag">New Listing Flow & Messaging Validation · n=347 · 4 Concepts Tested</div>
+        <h2>New Feature Concept Testing</h2>
+        <div class="study-tag">Product Feature Validation · n=347 · 4 Concepts Tested</div>
       </div>
     </div>
-    <p class="study-intro">Four redesigned host onboarding experiences were evaluated via conversational concept test. Respondents — a mix of prospective hosts who considered listing on Turo but didn't, and new hosts within their first 90 days — engaged in adaptive dialogue probing first impressions, trust barriers, earnings clarity, and competitive comparisons with Getaround and traditional rental income alternatives.</p>
+    <p class="study-intro">Four potential Turo product features were evaluated via conversational concept test. Both guests and hosts engaged in adaptive dialogue probing initial reactions, willingness to pay, usage scenarios, and how each feature stacks up against Getaround, Hertz, and Enterprise alternatives.</p>
 
     <!-- KPIs -->
     <div class="kpi-row">
-      <div class="kpi"><div class="val" style="color:var(--mars-blue);">74%</div><div class="lbl">Top Concept Appeal</div></div>
-      <div class="kpi"><div class="val" style="color:var(--teal);">4.1/5</div><div class="lbl">Avg. Listing Intent</div></div>
-      <div class="kpi"><div class="val" style="color:var(--gold);">57%</div><div class="lbl">Said "Reduces Anxiety"</div></div>
-      <div class="kpi"><div class="val" style="color:var(--coral);">3,214</div><div class="lbl">Verbatim Responses</div></div>
+      <div class="kpi"><div class="val" style="color:var(--mars-blue);">81%</div><div class="lbl">Top Concept Appeal</div></div>
+      <div class="kpi"><div class="val" style="color:var(--teal);">4.3/5</div><div class="lbl">Avg. Intent to Use</div></div>
+      <div class="kpi"><div class="val" style="color:var(--gold);">57%</div><div class="lbl">Would Pay Premium</div></div>
+      <div class="kpi"><div class="val" style="color:var(--coral);">3,124</div><div class="lbl">Verbatim Responses</div></div>
     </div>
 
     <div class="data-grid g2">
-      <!-- Concept Scorecard Chart -->
       <div class="card">
-        <div class="card-label">Concept Scorecard — Onboarding Flows</div>
-        <div class="chart-wrap"><canvas id="c1_concept"></canvas></div>
+        <div class="card-label">Feature Concept Scorecard</div>
+        <div class="chart-wrap"><canvas id="conceptChart"></canvas></div>
       </div>
-      <!-- Listing Intent by Concept -->
       <div class="card">
-        <div class="card-label">Listing Intent Distribution</div>
-        <div class="chart-wrap"><canvas id="c1_intent"></canvas></div>
+        <div class="card-label">Willingness to Pay — By Feature</div>
+        <div class="chart-wrap"><canvas id="wtpChart"></canvas></div>
       </div>
     </div>
 
     <!-- Barrier Analysis -->
     <div class="card" style="margin-top:24px;">
-      <div class="card-label">Top Onboarding Barriers (% of Respondents Citing)</div>
+      <div class="card-label">Top Adoption Barriers (% of Respondents Citing)</div>
       <div class="bar-list">
-        <div class="bar-item"><span class="bar-label">Damage anxiety</span><div class="bar-track"><div class="bar-fill" style="width:53%;background:var(--mars-red);">53%</div></div></div>
-        <div class="bar-item"><span class="bar-label">Earnings unclear</span><div class="bar-track"><div class="bar-fill" style="width:41%;background:var(--coral);">41%</div></div></div>
-        <div class="bar-item"><span class="bar-label">Insurance confusion</span><div class="bar-track"><div class="bar-fill" style="width:37%;background:var(--gold);">37%</div></div></div>
-        <div class="bar-item"><span class="bar-label">Photo/listing effort</span><div class="bar-track"><div class="bar-fill" style="width:29%;background:var(--teal);">29%</div></div></div>
-        <div class="bar-item"><span class="bar-label">Pricing complexity</span><div class="bar-track"><div class="bar-fill" style="width:22%;background:var(--violet);">22%</div></div></div>
+        <div class="bar-item"><span class="bar-label">Price sensitivity</span><div class="bar-track"><div class="bar-fill" style="width:52%;background:var(--mars-red);">52%</div></div></div>
+        <div class="bar-item"><span class="bar-label">Trust in host</span><div class="bar-track"><div class="bar-fill" style="width:39%;background:var(--coral);">39%</div></div></div>
+        <div class="bar-item"><span class="bar-label">Insurance confusion</span><div class="bar-track"><div class="bar-fill" style="width:33%;background:var(--gold);">33%</div></div></div>
+        <div class="bar-item"><span class="bar-label">Pickup logistics</span><div class="bar-track"><div class="bar-fill" style="width:26%;background:var(--teal);">26%</div></div></div>
+        <div class="bar-item"><span class="bar-label">Vehicle condition worry</span><div class="bar-track"><div class="bar-fill" style="width:19%;background:var(--violet);">19%</div></div></div>
       </div>
     </div>
 
-    <!-- Verbatims -->
     <div class="verbatim-grid">
-      <div class="verbatim">"The earnings calculator in Concept A made it real for me — seeing '$680/mo for a 2021 Camry' was way more convincing than 'earn money with your car.'"<div class="v-meta">— Female, 34, Prospective Host, Concept A</div></div>
-      <div class="verbatim">"I stalled out on Turo twice because I couldn't figure out how the protection plan worked. Concept C's side-by-side comparison chart would've saved me."<div class="v-meta">— Male, 28, Lapsed Prospect, Concept C</div></div>
-      <div class="verbatim">"Getaround's hands-free setup felt easier, but I chose Turo because you make more money. If onboarding was this smooth, there'd be no contest."<div class="v-meta">— Male, 41, New Host (60 days), Concept A</div></div>
-      <div class="verbatim">"I just want someone to say 'if your car gets scratched, here's exactly what happens, step by step.' None of the concepts nailed that yet."<div class="v-meta">— Female, 37, Prospective Host, Concept D</div></div>
+      <div class="verbatim">"Instant Book with guaranteed pickup within 10 minutes of landing? That's the thing that would make me stop defaulting to Hertz at the airport."<div class="v-meta">— Male, 33, Guest, Concept A: Airport Express Pickup</div></div>
+      <div class="verbatim">"I'd pay an extra $12/day for a damage-guarantee package that actually covers everything. The current insurance tiers are confusing and I always feel like I'm exposed."<div class="v-meta">— Female, 28, Guest, Concept B: All-In Protection</div></div>
+      <div class="verbatim">"A host rating that shows response time AND how accurate the listing photos are? That alone would save me from the gamble I feel every time I book."<div class="v-meta">— Male, 41, Guest, Concept C: Verified Host Score</div></div>
+      <div class="verbatim">"The subscription model is interesting but $299/month only works if I'm renting at least 6–7 days. I'd need a lower tier for weekend-only travelers like me."<div class="v-meta">— Female, 36, Guest, Concept D: Turo Pass Subscription</div></div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════
-     STUDY 2: HOST PLATFORM SENTIMENT & COMPETITIVE TRACKING
+     STUDY 2: BRAND SENTIMENT & COMPETITIVE TRACKING
      ═══════════════════════════════════════════════════ -->
 <section class="study-section">
   <div class="container">
     <div class="study-header">
       <div class="study-icon" style="background:rgba(200,16,46,0.08);">💬</div>
       <div>
-        <h2>Host Platform Sentiment Tracker</h2>
-        <div class="study-tag">Cross-Platform Perception & Trust Equity · n=482 · 5 Platforms Tracked</div>
+        <h2>Brand Sentiment & Competitive Tracker</h2>
+        <div class="study-tag">Cross-Platform Perception & Trust Equity · n=482 · 6 Platforms Tracked</div>
       </div>
     </div>
-    <p class="study-intro">Active and lapsed hosts described their relationship with Turo and competing platforms — including Getaround, HyreCar, and traditional dealer rental programs — through projective exercises, spontaneous word association, and competitive trade-off scenarios. Sentiment was scored and themed at the response level to reveal trust gaps, loyalty drivers, and emerging threats.</p>
+    <p class="study-intro">Consumers described their relationship with Turo, Getaround, Enterprise, Hertz, Sixt, and Zipcar through projective exercises, spontaneous word association, and competitive trade-off scenarios. Sentiment was scored and themed at the response level.</p>
 
     <div class="kpi-row">
-      <div class="kpi"><div class="val" style="color:var(--teal);">+31</div><div class="lbl">Turo Net Sentiment</div></div>
-      <div class="kpi"><div class="val" style="color:var(--mars-blue);">+12</div><div class="lbl">Getaround Net Sentiment</div></div>
-      <div class="kpi"><div class="val" style="color:var(--gold);">−8</div><div class="lbl">HyreCar Net Sentiment</div></div>
-      <div class="kpi"><div class="val" style="color:var(--coral);">2.8×</div><div class="lbl">Richer vs. Survey Data</div></div>
+      <div class="kpi"><div class="val" style="color:var(--teal);">+37</div><div class="lbl">Turo Net Sentiment</div></div>
+      <div class="kpi"><div class="val" style="color:var(--mars-blue);">+14</div><div class="lbl">Getaround Net Sentiment</div></div>
+      <div class="kpi"><div class="val" style="color:var(--gold);">+29</div><div class="lbl">Enterprise Net Sentiment</div></div>
+      <div class="kpi"><div class="val" style="color:var(--coral);">3.4×</div><div class="lbl">Richer vs. Survey Data</div></div>
     </div>
 
     <div class="data-grid g2">
-      <!-- Perceptual Map -->
       <div class="card">
-        <div class="card-label">Perceptual Map — Host Platform Landscape</div>
+        <div class="card-label">Perceptual Map — Car Rental & Sharing Platforms</div>
         <div class="perceptual-map" id="percMap">
           <div class="pm-axis-x"></div>
           <div class="pm-axis-y"></div>
-          <div class="pm-label top">High Earnings</div>
-          <div class="pm-label bottom">Low Earnings</div>
-          <div class="pm-label left">High Effort</div>
-          <div class="pm-label right">Low Effort</div>
+          <div class="pm-label top">Premium</div>
+          <div class="pm-label bottom">Budget</div>
+          <div class="pm-label left">Traditional</div>
+          <div class="pm-label right">Tech-Forward</div>
         </div>
       </div>
-      <!-- Emotional Territory -->
       <div class="card">
-        <div class="card-label">Host Emotional Territory — Platform Associations</div>
-        <div class="chart-wrap"><canvas id="c2_radar"></canvas></div>
+        <div class="card-label">Emotional Territory Ownership</div>
+        <div class="chart-wrap"><canvas id="emotionChart"></canvas></div>
       </div>
     </div>
 
-    <!-- Sentiment Over Time -->
     <div class="card" style="margin-top:24px;">
-      <div class="card-label">Host Sentiment Trend — Quarterly Shift (Indexed to Q1 2025 = 100)</div>
-      <div class="chart-wrap"><canvas id="c2_trend"></canvas></div>
+      <div class="card-label">Brand Sentiment Trend — Quarterly Narrative Shift (Indexed)</div>
+      <div class="chart-wrap"><canvas id="sentimentTrend"></canvas></div>
     </div>
 
     <div class="verbatim-grid">
-      <div class="verbatim">"Turo gives me the most bookings by far. But every time a guest returns my car with a new scratch, the claims process makes me question everything."<div class="v-meta">— Male, 38, Active Host (14 months), Spontaneous Association</div></div>
-      <div class="verbatim">"Getaround is like autopilot but autopilot at minimum wage. With Turo I actually feel like I'm running a business."<div class="v-meta">— Female, 31, Multi-Platform Host, Competitive Trade-off</div></div>
-      <div class="verbatim">"If Turo were a person, it'd be an ambitious friend who sometimes forgets to text you back. Great potential, inconsistent support."<div class="v-meta">— Male, 44, Active Host (2+ years), Projective Exercise</div></div>
-      <div class="verbatim">"I tried HyreCar for rideshare rentals and it was chaos. Came back to Turo within a month. The guest quality is just so much better here."<div class="v-meta">— Female, 29, Returning Host, Platform Comparison</div></div>
+      <div class="verbatim">"Turo feels like the Airbnb of cars — sometimes you get a gem, sometimes you get burned. Enterprise is boring but predictable."<div class="v-meta">— Female, 31, Spontaneous Association</div></div>
+      <div class="verbatim">"If Turo were a person, they'd be that friend who has great taste in cars but sometimes flakes on plans. You love them but you can't always count on them."<div class="v-meta">— Male, 27, Brand Personification</div></div>
+      <div class="verbatim">"I trust Hertz for business trips because I know what I'm getting. But for a weekend road trip or a date? Turo every time. The variety is unbeatable."<div class="v-meta">— Male, 34, Competitive Trade-off</div></div>
+      <div class="verbatim">"Getaround just feels like a cheaper version of Turo. The cars are older, the hosts are less responsive, and the app feels like it was built in 2016."<div class="v-meta">— Female, 25, Competitive Trade-off</div></div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════
-     STUDY 3: HOST USAGE & DEMAND SPACE MAPPING
+     STUDY 3: OCCASION & USAGE MAPPING
      ═══════════════════════════════════════════════════ -->
 <section class="study-section" style="background:var(--surface);">
   <div class="container">
     <div class="study-header">
       <div class="study-icon" style="background:rgba(245,166,35,0.08);">🗺️</div>
       <div>
-        <h2>Host Engagement & Usage Mapping</h2>
-        <div class="study-tag">Host Activity Patterns & Demand Spaces · n=403 · 1,189 Hosting Moments Captured</div>
+        <h2>Trip Occasion & Usage Mapping</h2>
+        <div class="study-tag">Demand Space Discovery · n=418 · 1,389 Trip Occasions Captured</div>
       </div>
     </div>
-    <p class="study-intro">Hosts walked through their recent week of hosting activity in dialogue form — from pricing adjustments to guest communication to vehicle turnover. Our AI moderator probed on time investment, pain points, tool usage, and satisfaction per task — surfacing 12 distinct host "demand spaces" including 3 emergent needs not addressed by current Turo tooling.</p>
+    <p class="study-intro">Respondents walked through recent real car rental and sharing moments in dialogue form. Our AI moderator probed on trip purpose, mood, alternatives considered, vehicle choice drivers, and satisfaction — surfacing 12 distinct demand spaces, including 3 emergent occasions not present in Turo's existing trip taxonomy.</p>
 
     <div class="kpi-row">
       <div class="kpi"><div class="val" style="color:var(--gold);">12</div><div class="lbl">Demand Spaces Identified</div></div>
-      <div class="kpi"><div class="val" style="color:var(--teal);">3 new</div><div class="lbl">Emergent Host Needs</div></div>
-      <div class="kpi"><div class="val" style="color:var(--mars-blue);">6.2 hrs</div><div class="lbl">Avg. Weekly Host Time</div></div>
-      <div class="kpi"><div class="val" style="color:var(--coral);">1,189</div><div class="lbl">Moments Captured</div></div>
+      <div class="kpi"><div class="val" style="color:var(--teal);">3 new</div><div class="lbl">Emergent Trip Types</div></div>
+      <div class="kpi"><div class="val" style="color:var(--mars-blue);">$185M</div><div class="lbl">Est. Whitespace Value</div></div>
+      <div class="kpi"><div class="val" style="color:var(--coral);">1,389</div><div class="lbl">Trips Captured</div></div>
     </div>
 
-    <!-- Heatmap -->
     <div class="card">
-      <div class="card-label">Host Activity Heatmap — Task Frequency × Day of Week</div>
+      <div class="card-label">Trip Occasion Heatmap — Frequency × Day of Week</div>
       <table class="heatmap-table" id="heatmap"></table>
     </div>
 
-    <!-- Demand Space Chart -->
     <div class="data-grid g2" style="margin-top:24px;">
       <div class="card">
-        <div class="card-label">Top Host Demand Spaces by Time Investment</div>
-        <div class="chart-wrap"><canvas id="c3_demand"></canvas></div>
+        <div class="card-label">Top Trip Demand Spaces by Frequency</div>
+        <div class="chart-wrap"><canvas id="demandChart"></canvas></div>
       </div>
       <div class="card">
-        <div class="card-label">Whitespace Opportunities — Unmet Host Needs</div>
+        <div class="card-label">Whitespace Opportunities</div>
         <div style="margin-top:8px;">
           <div style="background:rgba(245,166,35,0.08);border:1px solid rgba(245,166,35,0.2);border-radius:12px;padding:16px 18px;margin-bottom:12px;">
-            <h4 style="font-size:14px;font-weight:700;color:var(--gold);margin-bottom:4px;">🔥 "Turnover Autopilot"</h4>
-            <p style="font-size:13px;line-height:1.55;color:var(--text2);">Hosts spend 2.4 hrs/week coordinating vehicle handoffs — finding cleaning slots, managing check-in photos, and chasing late returns. 68% want an integrated turnover scheduling tool. <strong>Highest-priority unmet need.</strong></p>
+            <h4 style="font-size:14px;font-weight:700;color:var(--gold);margin-bottom:4px;">🔥 "Try Before You Buy"</h4>
+            <p style="font-size:13px;line-height:1.55;color:var(--text2);">Consumers considering purchasing a new car use Turo as a multi-day test drive. 23% of respondents reported booking specifically to test a vehicle model. Currently unstructured — a dedicated product flow could convert guests to buyer referral partners with OEMs. <strong>Est. $72M opportunity.</strong></p>
           </div>
           <div style="background:rgba(10,186,181,0.06);border:1px solid rgba(10,186,181,0.15);border-radius:12px;padding:16px 18px;margin-bottom:12px;">
-            <h4 style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:4px;">⚡ "Smart Pricing Confidence"</h4>
-            <p style="font-size:13px;line-height:1.55;color:var(--text2);">52% of hosts manually adjust prices weekly but only 23% trust Turo's dynamic pricing suggestions. Hosts want transparent "why" explanations alongside price recommendations. <strong>Key retention lever for power hosts.</strong></p>
+            <h4 style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:4px;">⚡ "Local Upgrade Weekend"</h4>
+            <p style="font-size:13px;line-height:1.55;color:var(--text2);">Car owners in cities renting aspirational vehicles (Porsche, Tesla Model S, BMW M3) for date nights or special weekends — not travel. Need state is identity/status elevation. Under-marketed to the local non-traveler segment. <strong>Est. $63M incremental.</strong></p>
           </div>
           <div style="background:rgba(124,92,252,0.06);border:1px solid rgba(124,92,252,0.15);border-radius:12px;padding:16px 18px;">
-            <h4 style="font-size:14px;font-weight:700;color:var(--violet);margin-bottom:4px;">📊 "Earnings Intelligence"</h4>
-            <p style="font-size:13px;line-height:1.55;color:var(--text2);">Hosts managing 3+ vehicles want fleet-level P&L dashboards — depreciation tracking, per-vehicle ROI, tax prep exports. Currently cobbling together spreadsheets. <strong>Premium feature opportunity.</strong></p>
+            <h4 style="font-size:14px;font-weight:700;color:var(--violet);margin-bottom:4px;">🏕️ "Adventure-Specific Gear"</h4>
+            <p style="font-size:13px;line-height:1.55;color:var(--text2);">Guests seeking specific vehicle capabilities for activities — 4x4 for trails, van for camping, truck for moving. Currently mixed in with general inventory. Filtering and bundled add-ons (roof racks, camping kits) could command 18–25% premium. <strong>Est. $50M opportunity.</strong></p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="verbatim-grid">
-      <div class="verbatim">"Friday afternoons are pure chaos. I've got three cars coming back, two going out, and I'm texting six people trying to coordinate handoff times. An automated scheduler would save my sanity."<div class="v-meta">— Male, 36, Power Host (8 vehicles), Vehicle Turnover</div></div>
-      <div class="verbatim">"I turned off dynamic pricing because it kept dropping my Tesla Model 3 to $58/day during a holiday weekend. I can get $120 easily — I just don't trust the algorithm."<div class="v-meta">— Female, 33, Active Host (3 vehicles), Pricing Task</div></div>
-      <div class="verbatim">"I spend Sunday nights updating a spreadsheet to figure out which car is actually profitable. If Turo showed me real ROI per vehicle after expenses, I'd pay extra for that."<div class="v-meta">— Male, 42, Fleet Host (12 vehicles), Earnings Review</div></div>
-      <div class="verbatim">"Guest communication takes way more time than people think. I answer the same 5 questions every single booking — directions, parking, gas policy. A smart auto-reply would cut my workload in half."<div class="v-meta">— Female, 27, Active Host (2 vehicles), Messaging Task</div></div>
+      <div class="verbatim">"I was deciding between a Tesla Model Y and a Hyundai Ioniq 5, so I booked both on Turo for a weekend each. Way better than a 15-minute dealership test drive. I bought the Ioniq."<div class="v-meta">— Male, 38, Try Before You Buy Trip</div></div>
+      <div class="verbatim">"My boyfriend's birthday was coming up and I rented a Porsche 911 for the weekend. We just drove up the coast. We own a Civic — it was like being someone else for two days."<div class="v-meta">— Female, 29, Local Upgrade Trip</div></div>
+      <div class="verbatim">"I specifically searched for a Jeep Wrangler with all-terrain tires for Moab. Took 45 minutes of scrolling to find the right one. If there was a 'trail-ready' filter, I'd pay more for that curation."<div class="v-meta">— Male, 32, Adventure-Specific Trip</div></div>
+      <div class="verbatim">"We fly into a city for work but extend through the weekend to explore. I book Turo because I can get something fun — a convertible, a Bronco — not the beige Camry Hertz would give me."<div class="v-meta">— Female, 35, Business-to-Leisure Trip</div></div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════
-     STUDY 4: MILLENNIAL & GEN Z HOST ACQUISITION
+     STUDY 4: MILLENNIAL & GEN Z GUEST ACQUISITION
      ═══════════════════════════════════════════════════ -->
 <section class="study-section">
   <div class="container">
     <div class="study-header">
       <div class="study-icon" style="background:rgba(10,186,181,0.08);">⚡</div>
       <div>
-        <h2>Millennial & Gen Z Host Acquisition</h2>
-        <div class="study-tag">Next-Gen Host Preference Architecture · n=361 · Ages 22–38</div>
+        <h2>Gen Z & Young Millennial Guest Acquisition</h2>
+        <div class="study-tag">Next-Gen Mobility Preferences · n=356 · Ages 18–32</div>
       </div>
     </div>
-    <p class="study-intro">Mobile-first conversational interviews with younger car owners who are aware of Turo but haven't listed. 3× higher completion rate than traditional surveys in this demographic. Respondents engaged with projective exercises, competitive platform sorts, and earnings scenario simulations. The study reveals what it would take to convert the next wave of hosts.</p>
+    <p class="study-intro">Mobile-first conversational interviews designed to mirror texting culture. 3× higher completion rate than traditional surveys in this demographic. Respondents engaged in competitive brand sorts, scenario-based booking simulations, and projective exercises comparing Turo to Getaround, Zipcar, and traditional rental agencies.</p>
 
     <div class="kpi-row">
       <div class="kpi"><div class="val" style="color:var(--teal);">91%</div><div class="lbl">Completion Rate</div></div>
       <div class="kpi"><div class="val" style="color:var(--violet);">17.8 min</div><div class="lbl">Avg. Engagement</div></div>
-      <div class="kpi"><div class="val" style="color:var(--gold);">63%</div><div class="lbl">Aware but Never Listed</div></div>
-      <div class="kpi"><div class="val" style="color:var(--mars-red);">44%</div><div class="lbl">Would List if "Guaranteed"</div></div>
+      <div class="kpi"><div class="val" style="color:var(--gold);">71%</div><div class="lbl">Discover via Social</div></div>
+      <div class="kpi"><div class="val" style="color:var(--mars-red);">44%</div><div class="lbl">Non-Car Owners</div></div>
     </div>
 
     <div class="data-grid g2">
       <div class="card">
-        <div class="card-label">How Prospective Hosts Discovered Turo</div>
-        <div class="chart-wrap"><canvas id="c4_discovery"></canvas></div>
+        <div class="card-label">Platform Discovery Channels — Gen Z/Young Millennials</div>
+        <div class="chart-wrap"><canvas id="discoveryChart"></canvas></div>
       </div>
       <div class="card">
-        <div class="card-label">Motivational Drivers — What Would Unlock Listing</div>
-        <div class="chart-wrap"><canvas id="c4_drivers"></canvas></div>
+        <div class="card-label">Booking Decision Drivers — Ranked Importance</div>
+        <div class="chart-wrap"><canvas id="driversChart"></canvas></div>
       </div>
     </div>
 
     <div class="data-grid g2" style="margin-top:24px;">
       <div class="card">
-        <div class="card-label">Conversion Barrier Index — Prospective Hosts (22–38)</div>
+        <div class="card-label">Platform Affinity Index — Gen Z/Young Millennials</div>
         <div class="bar-list" style="margin-top:0;">
-          <div class="bar-item"><span class="bar-label">Damage/liability fear</span><div class="bar-track"><div class="bar-fill" style="width:78%;background:var(--coral);">78</div></div></div>
-          <div class="bar-item"><span class="bar-label">Stranger in my car</span><div class="bar-track"><div class="bar-fill" style="width:71%;background:var(--coral);">71</div></div></div>
-          <div class="bar-item"><span class="bar-label">Uncertain earnings</span><div class="bar-track"><div class="bar-fill" style="width:64%;background:var(--gold);">64</div></div></div>
-          <div class="bar-item"><span class="bar-label">Time commitment</span><div class="bar-track"><div class="bar-fill" style="width:52%;background:var(--teal);">52</div></div></div>
-          <div class="bar-item"><span class="bar-label">Insurance overlap</span><div class="bar-track"><div class="bar-fill" style="width:47%;background:var(--mars-blue);">47</div></div></div>
-          <div class="bar-item"><span class="bar-label">Car not nice enough</span><div class="bar-track"><div class="bar-fill" style="width:33%;background:var(--text2);">33</div></div></div>
+          <div class="bar-item"><span class="bar-label">Turo</span><div class="bar-track"><div class="bar-fill" style="width:79%;background:var(--teal);">79</div></div></div>
+          <div class="bar-item"><span class="bar-label">Zipcar</span><div class="bar-track"><div class="bar-fill" style="width:64%;background:var(--teal);">64</div></div></div>
+          <div class="bar-item"><span class="bar-label">Getaround</span><div class="bar-track"><div class="bar-fill" style="width:53%;background:var(--mars-blue);">53</div></div></div>
+          <div class="bar-item"><span class="bar-label">Enterprise</span><div class="bar-track"><div class="bar-fill" style="width:47%;background:var(--mars-blue);">47</div></div></div>
+          <div class="bar-item"><span class="bar-label">Hertz</span><div class="bar-track"><div class="bar-fill" style="width:41%;background:var(--text2);">41</div></div></div>
+          <div class="bar-item"><span class="bar-label">Sixt</span><div class="bar-track"><div class="bar-fill" style="width:34%;background:var(--text2);">34</div></div></div>
         </div>
       </div>
       <div class="card">
-        <div class="card-label">What Prospective Hosts Say About Turo</div>
+        <div class="card-label">What Gen Z Says About Turo</div>
         <div class="seg-row" style="margin-top:0;margin-bottom:16px;">
-          <span class="seg-tag">Side Hustle</span>
-          <span class="seg-tag">Smart Money</span>
-          <span class="seg-tag">Passive Income</span>
-          <span class="seg-tag" style="background:rgba(200,16,46,0.08);color:var(--mars-red);border-color:rgba(200,16,46,0.15);">Risky</span>
-          <span class="seg-tag" style="background:rgba(200,16,46,0.08);color:var(--mars-red);border-color:rgba(200,16,46,0.15);">Wear & Tear</span>
+          <span class="seg-tag">Unique selection</span>
+          <span class="seg-tag">Instagram-worthy</span>
+          <span class="seg-tag">Peer-to-peer trust</span>
+          <span class="seg-tag" style="background:rgba(200,16,46,0.08);color:var(--mars-red);border-color:rgba(200,16,46,0.15);">Hidden fees</span>
+          <span class="seg-tag" style="background:rgba(200,16,46,0.08);color:var(--mars-red);border-color:rgba(200,16,46,0.15);">Damage anxiety</span>
         </div>
-        <div class="verbatim" style="margin-bottom:10px;">"I've watched YouTube videos of people making $2K/month on Turo and I want that — but my Honda Civic isn't a Tesla. I don't know if it's even worth listing."<div class="v-meta">— Male, 26, Prospective Host</div></div>
-        <div class="verbatim">"If Turo guaranteed my first $500 in earnings and covered any damage on the first trip, I'd list tomorrow. I just need that safety net to start."<div class="v-meta">— Female, 24, Prospective Host</div></div>
+        <div class="verbatim" style="margin-bottom:10px;">"Turo is the only place I can rent a Tesla for a road trip without selling a kidney. Enterprise would give me a Nissan Sentra for the same price."<div class="v-meta">— Male, 24</div></div>
+        <div class="verbatim">"I love the idea but every time I return a car I'm terrified the host will claim damage that was already there. The trust gap is real."<div class="v-meta">— Female, 22</div></div>
       </div>
-    </div>
-
-    <div class="verbatim-grid">
-      <div class="verbatim">"My car just sits in my apartment garage 5 days a week while I take the subway. I know I'm leaving money on the table. But what if someone trashes it?"<div class="v-meta">— Female, 29, Prospective Host, Scenario Exercise</div></div>
-      <div class="verbatim">"Getaround's connect device sounded cool but the earnings were garbage — like $180/month for my 2020 Civic. I'd switch to Turo if the onboarding wasn't so overwhelming."<div class="v-meta">— Male, 31, Getaround Lapsed Host, Competitive Trade-off</div></div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════
-     STUDY 5: HOST PROTECTION PLAN PRICING SENSITIVITY (VAN WESTENDORP)
+     STUDY 5: HOST RETENTION & ECONOMICS
      ═══════════════════════════════════════════════════ -->
 <section class="study-section" style="background:var(--surface);">
   <div class="container">
     <div class="study-header">
-      <div class="study-icon" style="background:rgba(124,92,252,0.08);">💰</div>
+      <div class="study-icon" style="background:rgba(124,92,252,0.08);">🚗</div>
       <div>
-        <h2>Host Protection Plan Pricing Sensitivity</h2>
-        <div class="study-tag">Van Westendorp Price Sensitivity · n=418 · 4 Protection Tiers Evaluated</div>
+        <h2>Host Retention & Supply-Side Economics</h2>
+        <div class="study-tag">Host Psychographics & Churn Drivers · n=412 · 4 Host Archetypes Identified</div>
       </div>
     </div>
-    <p class="study-intro">Active Turo hosts evaluated willingness-to-pay for an enhanced host protection plan using a Van Westendorp pricing methodology adapted for conversational research. The AI moderator walked hosts through four protection tiers — from basic coverage to premium concierge-level claims — probing price thresholds, value anchors, and switching triggers relative to Turo's current 15%–40% commission structure.</p>
+    <p class="study-intro">Turo hosts engaged in 22+ minute conversations about their listing strategies, earnings expectations, pain points, and competitive considerations including Getaround, HyreCar, and traditional fleet leasing. Response lengths were 2.3× longer than our marketplace benchmark — hosts are deeply invested in the economics. Four distinct host archetypes emerged with dramatically different churn triggers.</p>
 
     <div class="kpi-row">
-      <div class="kpi"><div class="val" style="color:var(--violet);">$14.50</div><div class="lbl">Optimal Price Point</div></div>
-      <div class="kpi"><div class="val" style="color:var(--teal);">$11–$19</div><div class="lbl">Acceptable Range</div></div>
-      <div class="kpi"><div class="val" style="color:var(--gold);">73%</div><div class="lbl">Would Pay for Premium</div></div>
-      <div class="kpi"><div class="val" style="color:var(--mars-red);">$24</div><div class="lbl">Rejection Threshold</div></div>
+      <div class="kpi"><div class="val" style="color:var(--violet);">4</div><div class="lbl">Host Archetypes</div></div>
+      <div class="kpi"><div class="val" style="color:var(--teal);">22 min</div><div class="lbl">Avg. Conversation</div></div>
+      <div class="kpi"><div class="val" style="color:var(--gold);">38%</div><div class="lbl">Considered Leaving</div></div>
+      <div class="kpi"><div class="val" style="color:var(--mars-red);">$847</div><div class="lbl">Avg. Monthly Earnings</div></div>
     </div>
 
     <div class="data-grid g2">
       <div class="card">
-        <div class="card-label">Van Westendorp Price Sensitivity Meter — Per Trip Add-on</div>
-        <div class="chart-wrap"><canvas id="c5_vw"></canvas></div>
+        <div class="card-label">Host Pain Point Severity Index</div>
+        <div class="chart-wrap"><canvas id="hostPainChart"></canvas></div>
       </div>
       <div class="card">
-        <div class="card-label">Tier Preference Distribution</div>
-        <div class="chart-wrap"><canvas id="c5_tiers"></canvas></div>
-      </div>
-    </div>
-
-    <div class="data-grid g2" style="margin-top:24px;">
-      <div class="card">
-        <div class="card-label">Willingness to Pay by Host Segment</div>
-        <div class="chart-wrap"><canvas id="c5_wtp_seg"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-label">Feature Value Ranking — What Justifies Premium Price</div>
-        <div class="bar-list" style="margin-top:0;">
-          <div class="bar-item"><span class="bar-label">24hr claims resolution</span><div class="bar-track"><div class="bar-fill" style="width:83%;background:var(--violet);">83%</div></div></div>
-          <div class="bar-item"><span class="bar-label">$0 deductible</span><div class="bar-track"><div class="bar-fill" style="width:76%;background:var(--teal);">76%</div></div></div>
-          <div class="bar-item"><span class="bar-label">Lost income coverage</span><div class="bar-track"><div class="bar-fill" style="width:69%;background:var(--mars-blue);">69%</div></div></div>
-          <div class="bar-item"><span class="bar-label">Interior deep clean</span><div class="bar-track"><div class="bar-fill" style="width:54%;background:var(--gold);">54%</div></div></div>
-          <div class="bar-item"><span class="bar-label">Tire & windshield cover</span><div class="bar-track"><div class="bar-fill" style="width:48%;background:var(--coral);">48%</div></div></div>
-          <div class="bar-item"><span class="bar-label">Dedicated host advisor</span><div class="bar-track"><div class="bar-fill" style="width:41%;background:var(--text2);">41%</div></div></div>
+        <div class="card-label">Host Archetypes</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div style="background:rgba(124,92,252,0.06);border-radius:10px;padding:14px 16px;">
+            <div style="font-size:13px;font-weight:700;color:var(--violet);margin-bottom:4px;">📈 Fleet Entrepreneurs (24%)</div>
+            <p style="font-size:12px;line-height:1.5;color:var(--text2);">5+ vehicles. Treat Turo as a business. Obsess over utilization rates and pricing optimization. Most price-sensitive to commission changes. Highest churn risk.</p>
+          </div>
+          <div style="background:rgba(10,186,181,0.06);border-radius:10px;padding:14px 16px;">
+            <div style="font-size:13px;font-weight:700;color:var(--teal);margin-bottom:4px;">🏠 Side Hustlers (37%)</div>
+            <p style="font-size:12px;line-height:1.5;color:var(--text2);">1–2 cars. Offset car payment with Turo income. Value simplicity over optimization. Turo's largest and most stable segment. Churn trigger: bad guest experience.</p>
+          </div>
+          <div style="background:rgba(245,166,35,0.06);border-radius:10px;padding:14px 16px;">
+            <div style="font-size:13px;font-weight:700;color:var(--gold);margin-bottom:4px;">🏎️ Car Enthusiasts (22%)</div>
+            <p style="font-size:12px;line-height:1.5;color:var(--text2);">List specialty or luxury vehicles. Earnings matter less than connecting with people who appreciate their car. Want guest vetting and vehicle-specific protections. Low churn.</p>
+          </div>
+          <div style="background:rgba(200,16,46,0.06);border-radius:10px;padding:14px 16px;">
+            <div style="font-size:13px;font-weight:700;color:var(--mars-red);margin-bottom:4px;">😩 Frustrated Exiters (17%)</div>
+            <p style="font-size:12px;line-height:1.5;color:var(--text2);">Planning to delist within 6 months. Triggered by claim disputes, fee increases, or guest damage. 68% said a single bad claim experience was the tipping point.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Need State Gaps -->
     <div class="card" style="margin-top:24px;">
-      <div class="card-label">Price Sensitivity by Vehicle Value Segment</div>
-      <div class="chart-wrap"><canvas id="c5_scatter"></canvas></div>
+      <div class="card-label">Host Earnings Satisfaction vs. Platform Feature Satisfaction</div>
+      <div class="chart-wrap"><canvas id="hostScatterChart"></canvas></div>
     </div>
 
     <div class="verbatim-grid">
-      <div class="verbatim">"At $12 per trip it's a no-brainer — I lose more than that in anxiety every time someone books. At $20+ I'd start doing the math on whether it's worth it."<div class="v-meta">— Male, 39, Active Host (5 vehicles), Van Westendorp Dialogue</div></div>
-      <div class="verbatim">"The $375 deductible on my current plan already stings. If a premium tier meant zero deductible and they resolved claims in 48 hours instead of 3 weeks, I'd pay $18/trip without blinking."<div class="v-meta">— Female, 35, Active Host (3 vehicles), Tier Evaluation</div></div>
-      <div class="verbatim">"Lost income coverage is the killer feature. I had my BMW in claims for 11 days and lost $900 in bookings. That's what I'd actually pay to insure against."<div class="v-meta">— Male, 46, Power Host (9 vehicles), Feature Probing</div></div>
-      <div class="verbatim">"Honestly, I'd rather Turo lower the commission by 3% than sell me another add-on. I'm already paying 25% — where does it end?"<div class="v-meta">— Female, 28, Active Host (1 vehicle), Price Resistance</div></div>
+      <div class="verbatim">"I make $2,200/month across three cars. When Turo raised the host fee from 15% to 25%, I nearly moved everything to Getaround. I stayed because their guest pool is smaller, but I'm watching."<div class="v-meta">— Male, 42, Fleet Entrepreneur</div></div>
+      <div class="verbatim">"My car sits in the driveway 22 days a month while I work from home. Turo turns that into $600. It basically pays for the car. I don't need to optimize — I just need it to be easy."<div class="v-meta">— Female, 34, Side Hustler</div></div>
+      <div class="verbatim">"I list my 1967 Mustang on Turo. I'm not in this for the money. I love when someone books it for their wedding or a birthday. But if someone returns it with a scratch and Turo sides with the guest? I'm done."<div class="v-meta">— Male, 51, Car Enthusiast</div></div>
+      <div class="verbatim">"A guest returned my car with a cracked windshield and Turo offered me $180 toward a $450 repair. I've been a host for three years. That one experience is why I'm delisting next month."<div class="v-meta">— Female, 39, Frustrated Exiter</div></div>
     </div>
   </div>
 </section>
@@ -545,7 +530,7 @@ section{padding:88px 48px;}
   <div class="container">
     <div class="s-label">Next Steps</div>
     <div class="s-title">Let's scope a pilot study for Turo</div>
-    <p class="s-desc">We recommend starting with host churn drivers or onboarding friction to prove the model — then expanding across the host experience roadmap.</p>
+    <p class="s-desc">We recommend starting with Host Retention or Guest Trust — the two studies most likely to unlock immediate product decisions.</p>
     <a href="mailto:jay@gatherhq.com" class="cta-btn">Let's Talk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     <p style="font-size:13px;color:var(--text2);margin-top:16px;">Your contact: Jay Flaherty · <a href="mailto:jay@gatherhq.com" style="color:var(--teal);">jay@gatherhq.com</a></p>
   </div>
@@ -566,16 +551,16 @@ const COLORS = {
   coral:'#FF6B6B', violet:'#7C5CFC', deep:'#0A1E33', text2:'#556377'
 };
 
-// ═══ STUDY 1: HOST ONBOARDING CONCEPT TESTING ═══
-new Chart(document.getElementById('c1_concept'), {
+// ═══ STUDY 1: CONCEPT TESTING ═══
+new Chart(document.getElementById('conceptChart'), {
   type: 'bar',
   data: {
-    labels: ['Concept A\n"Earnings First"', 'Concept B\n"Trust Builder"', 'Concept C\n"Side-by-Side"', 'Concept D\n"Quick List"'],
+    labels: ['Concept A\n"Airport Express"', 'Concept B\n"All-In Protection"', 'Concept C\n"Verified Host Score"', 'Concept D\n"Turo Pass"'],
     datasets: [
-      {label:'Appeal', data:[74,63,58,61], backgroundColor:COLORS.blue},
-      {label:'Clarity', data:[81,55,72,49], backgroundColor:COLORS.teal},
-      {label:'Trust', data:[66,71,69,44], backgroundColor:COLORS.gold},
-      {label:'Listing Intent', data:[73,57,54,52], backgroundColor:COLORS.coral},
+      {label:'Appeal', data:[81,74,77,62], backgroundColor:COLORS.blue},
+      {label:'Uniqueness', data:[68,57,72,78], backgroundColor:COLORS.teal},
+      {label:'Relevance', data:[79,82,71,54], backgroundColor:COLORS.gold},
+      {label:'Intent to Use', data:[76,69,73,48], backgroundColor:COLORS.coral},
     ]
   },
   options: {
@@ -585,14 +570,14 @@ new Chart(document.getElementById('c1_concept'), {
   }
 });
 
-new Chart(document.getElementById('c1_intent'), {
+new Chart(document.getElementById('wtpChart'), {
   type: 'bar',
   data: {
-    labels: ['Definitely list','Probably list','Might list','Probably not','Definitely not'],
+    labels: ['$0 (free only)','$1–$5/day','$6–$12/day','$13–$20/day','$20+/day'],
     datasets: [
-      {label:'Concept A', data:[26,41,19,10,4], backgroundColor:COLORS.blue},
-      {label:'Concept B', data:[15,36,28,14,7], backgroundColor:COLORS.teal},
-      {label:'Concept C', data:[13,34,31,16,6], backgroundColor:COLORS.gold},
+      {label:'Airport Express', data:[11,22,38,21,8], backgroundColor:COLORS.blue},
+      {label:'All-In Protection', data:[8,17,41,26,8], backgroundColor:COLORS.teal},
+      {label:'Turo Pass', data:[27,24,28,14,7], backgroundColor:COLORS.gold},
     ]
   },
   options: {
@@ -602,18 +587,17 @@ new Chart(document.getElementById('c1_intent'), {
   }
 });
 
-// ═══ STUDY 2: HOST PLATFORM SENTIMENT ═══
-// Perceptual Map dots
-const platforms = [
-  {name:"Turo", x:62, y:28, size:46, color:COLORS.blue},
-  {name:"Getaround", x:68, y:58, size:36, color:COLORS.teal},
-  {name:"HyreCar", x:45, y:62, size:28, color:COLORS.coral},
-  {name:"Private Rental", x:32, y:35, size:30, color:COLORS.gold},
-  {name:"Dealer Program", x:55, y:70, size:26, color:COLORS.text2},
-  {name:"Avail (by Allstate)", x:72, y:48, size:24, color:COLORS.violet},
+// ═══ STUDY 2: BRAND SENTIMENT ═══
+const brands = [
+  {name:"Turo", x:62, y:38, size:44, color:COLORS.teal},
+  {name:"Getaround", x:58, y:58, size:32, color:COLORS.text2},
+  {name:"Enterprise", x:32, y:35, size:40, color:COLORS.blue},
+  {name:"Hertz", x:28, y:40, size:38, color:COLORS.gold},
+  {name:"Sixt", x:38, y:22, size:30, color:COLORS.coral},
+  {name:"Zipcar", x:68, y:62, size:28, color:COLORS.violet},
 ];
 const map = document.getElementById('percMap');
-platforms.forEach(b => {
+brands.forEach(b => {
   const dot = document.createElement('div');
   dot.className = 'pm-dot';
   dot.style.cssText = `width:${b.size}px;height:${b.size}px;background:${b.color};left:calc(${b.x}% - ${b.size/2}px);top:calc(${b.y}% - ${b.size/2}px);`;
@@ -621,14 +605,14 @@ platforms.forEach(b => {
   map.appendChild(dot);
 });
 
-new Chart(document.getElementById('c2_radar'), {
+new Chart(document.getElementById('emotionChart'), {
   type: 'radar',
   data: {
-    labels: ['Trust', 'Earnings Power', 'Ease of Use', 'Support Quality', 'Community', 'Flexibility'],
+    labels: ['Freedom', 'Trust', 'Excitement', 'Convenience', 'Value', 'Community'],
     datasets: [
-      {label:"Turo", data:[62,84,58,47,71,78], borderColor:COLORS.blue, backgroundColor:'rgba(0,61,165,0.08)', pointBackgroundColor:COLORS.blue},
-      {label:"Getaround", data:[54,48,82,52,35,74], borderColor:COLORS.teal, backgroundColor:'rgba(10,186,181,0.08)', pointBackgroundColor:COLORS.teal},
-      {label:"Private Rental", data:[38,76,32,18,22,88], borderColor:COLORS.gold, backgroundColor:'rgba(245,166,35,0.08)', pointBackgroundColor:COLORS.gold},
+      {label:"Turo", data:[89,58,83,64,72,76], borderColor:COLORS.teal, backgroundColor:'rgba(10,186,181,0.08)', pointBackgroundColor:COLORS.teal},
+      {label:"Enterprise", data:[42,82,28,78,61,22], borderColor:COLORS.blue, backgroundColor:'rgba(0,61,165,0.08)', pointBackgroundColor:COLORS.blue},
+      {label:"Getaround", data:[71,44,48,69,74,52], borderColor:COLORS.gold, backgroundColor:'rgba(245,166,35,0.08)', pointBackgroundColor:COLORS.gold},
     ]
   },
   options: {
@@ -638,37 +622,37 @@ new Chart(document.getElementById('c2_radar'), {
   }
 });
 
-new Chart(document.getElementById('c2_trend'), {
+new Chart(document.getElementById('sentimentTrend'), {
   type: 'line',
   data: {
     labels: ['Q1 2024','Q2 2024','Q3 2024','Q4 2024','Q1 2025'],
     datasets: [
-      {label:"Turo", data:[100,97,99,103,105], borderColor:COLORS.blue, backgroundColor:COLORS.blue, tension:0.3, pointRadius:4},
-      {label:"Getaround", data:[100,96,92,89,86], borderColor:COLORS.teal, backgroundColor:COLORS.teal, tension:0.3, pointRadius:4},
-      {label:"HyreCar", data:[100,94,88,82,78], borderColor:COLORS.coral, backgroundColor:COLORS.coral, tension:0.3, pointRadius:4},
-      {label:"Private/Craigslist", data:[100,103,107,110,114], borderColor:COLORS.gold, backgroundColor:COLORS.gold, tension:0.3, pointRadius:4},
+      {label:"Turo", data:[100,103,106,104,108], borderColor:COLORS.teal, backgroundColor:COLORS.teal, tension:0.3, pointRadius:4},
+      {label:"Getaround", data:[100,97,94,91,88], borderColor:COLORS.text2, backgroundColor:COLORS.text2, tension:0.3, pointRadius:4},
+      {label:"Enterprise", data:[100,101,99,102,103], borderColor:COLORS.blue, backgroundColor:COLORS.blue, tension:0.3, pointRadius:4},
+      {label:"Hertz", data:[100,98,95,93,90], borderColor:COLORS.gold, backgroundColor:COLORS.gold, tension:0.3, pointRadius:4},
     ]
   },
   options: {
     responsive:true, maintainAspectRatio:false,
-    scales:{y:{min:70,max:120,ticks:{callback:v=>v}},x:{}},
+    scales:{y:{min:82,max:115,ticks:{callback:v=>v}},x:{}},
     plugins:{legend:{position:'bottom'}}
   }
 });
 
-// ═══ STUDY 3: HOST USAGE HEATMAP ═══
+// ═══ STUDY 3: OCCASION HEATMAP ═══
 const heatData = {
-  rows: ['Guest messaging','Pricing adjustments','Vehicle handoff/pickup','Cleaning/turnover','Photo check-in/out','Listing optimization','Earnings review','Claims/support'],
+  rows: ['Airport arrival trip','Weekend road trip','Business travel','Local upgrade / special occasion','Try-before-you-buy','Adventure / outdoor','Moving / hauling','Date night'],
   cols: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
   vals: [
-    [52,48,55,62,78,85,72],
-    [68,42,38,55,72,44,35],
-    [35,28,32,45,82,88,74],
-    [28,22,25,38,76,84,68],
-    [32,25,28,42,74,82,70],
-    [45,22,18,28,32,15,55],
-    [72,18,14,12,15,22,68],
-    [38,42,35,32,28,18,15],
+    [62,58,55,64,78,48,72],
+    [12,8,10,18,68,85,74],
+    [72,78,74,71,52,14,11],
+    [15,12,14,22,62,78,55],
+    [28,32,30,26,42,58,52],
+    [8,6,9,14,52,82,78],
+    [35,28,25,22,48,72,68],
+    [10,8,12,18,72,68,22],
   ]
 };
 const ht = document.getElementById('heatmap');
@@ -687,30 +671,30 @@ heatData.rows.forEach((r,i) => {
 });
 ht.innerHTML = thead + tbody;
 
-new Chart(document.getElementById('c3_demand'), {
+new Chart(document.getElementById('demandChart'), {
   type: 'bar',
   data: {
-    labels: ['Vehicle\nHandoff','Guest\nMessaging','Cleaning/\nTurnover','Pricing\nAdjustments','Photo\nCheck-in','Earnings\nReview','Listing\nOptimization','Claims/\nSupport'],
+    labels: ['Airport\nArrival','Weekend\nRoad Trip','Business\nTravel','Local\nUpgrade','Try Before\nYou Buy','Adventure\n/ Outdoor','Moving /\nHauling','Date\nNight'],
     datasets: [{
-      data: [24,19,18,14,11,7,4,3],
+      data: [83,79,72,67,58,54,48,42],
       backgroundColor: [COLORS.blue, COLORS.red, COLORS.teal, COLORS.violet, COLORS.gold, COLORS.coral, '#8B9DAF', '#8B9DAF'],
     }]
   },
   options: {
     indexAxis:'y', responsive:true, maintainAspectRatio:false,
-    scales:{x:{beginAtZero:true,ticks:{callback:v=>v+'%'},title:{display:true,text:'% of Weekly Host Time'}},y:{ticks:{font:{size:11}}}},
+    scales:{x:{beginAtZero:true,ticks:{callback:v=>v+'%'}},y:{ticks:{font:{size:11}}}},
     plugins:{legend:{display:false}}
   }
 });
 
-// ═══ STUDY 4: MILLENNIAL & GEN Z HOST ACQUISITION ═══
-new Chart(document.getElementById('c4_discovery'), {
+// ═══ STUDY 4: GEN Z / YOUNG MILLENNIALS ═══
+new Chart(document.getElementById('discoveryChart'), {
   type: 'doughnut',
   data: {
-    labels: ['YouTube/TikTok creator','Friend/peer referral','Saw a Turo car','Google search','Instagram ad','Reddit/forums','Other'],
+    labels: ['TikTok','Instagram','Friend/Word of Mouth','Google Search','YouTube','Twitter/X','Other'],
     datasets: [{
-      data: [31,24,18,12,8,5,2],
-      backgroundColor: [COLORS.deep, COLORS.teal, COLORS.gold, COLORS.blue, COLORS.coral, COLORS.violet, '#ccc'],
+      data: [31,21,19,15,8,3,3],
+      backgroundColor: [COLORS.deep, COLORS.coral, COLORS.teal, COLORS.gold, COLORS.red, COLORS.violet, '#ccc'],
       borderWidth: 2, borderColor: '#fff',
     }]
   },
@@ -721,13 +705,13 @@ new Chart(document.getElementById('c4_discovery'), {
   }
 });
 
-new Chart(document.getElementById('c4_drivers'), {
+new Chart(document.getElementById('driversChart'), {
   type: 'bar',
   data: {
-    labels: ['Guaranteed\nmin. earnings','$0 damage\ndeductible','1-tap\nlisting setup','Host mentor\nprogram','Flexible\navailability','Tax prep\ntools','Community\naccess'],
+    labels: ['Vehicle variety','Total price','Host reviews','Pickup ease','Insurance clarity','App experience','Cancellation policy'],
     datasets: [
-      {label:'Motivation Score', data:[86,81,74,62,58,43,37], backgroundColor:COLORS.teal},
-      {label:'Current Turo Delivery', data:[22,31,48,15,72,18,44], backgroundColor:COLORS.blue},
+      {label:'Importance Score', data:[88,85,79,74,71,63,58], backgroundColor:COLORS.teal},
+      {label:'Turo Satisfaction', data:[91,52,67,58,39,72,44], backgroundColor:COLORS.blue},
     ]
   },
   options: {
@@ -737,81 +721,43 @@ new Chart(document.getElementById('c4_drivers'), {
   }
 });
 
-// ═══ STUDY 5: PRICING SENSITIVITY ═══
-// Van Westendorp Price Sensitivity Meter
-new Chart(document.getElementById('c5_vw'), {
-  type: 'line',
-  data: {
-    labels: ['$5','$8','$10','$12','$14','$16','$18','$20','$22','$24','$28','$32'],
-    datasets: [
-      {label:'Too Cheap (Suspect Quality)', data:[82,61,43,28,16,9,4,2,1,0,0,0], borderColor:COLORS.coral, backgroundColor:'transparent', tension:0.4, pointRadius:3, borderDash:[5,5]},
-      {label:'Bargain (Good Value)', data:[94,88,79,72,62,48,33,21,12,6,2,0], borderColor:COLORS.teal, backgroundColor:'transparent', tension:0.4, pointRadius:3},
-      {label:'Getting Expensive', data:[3,8,16,28,44,58,71,82,89,94,97,99], borderColor:COLORS.gold, backgroundColor:'transparent', tension:0.4, pointRadius:3},
-      {label:'Too Expensive (Reject)', data:[0,1,3,6,12,21,34,48,63,78,91,97], borderColor:COLORS.red, backgroundColor:'transparent', tension:0.4, pointRadius:3, borderDash:[5,5]},
-    ]
-  },
-  options: {
-    responsive:true, maintainAspectRatio:false,
-    scales:{
-      y:{beginAtZero:true,max:100,ticks:{callback:v=>v+'%'},title:{display:true,text:'Cumulative % of Hosts'}},
-      x:{title:{display:true,text:'Price Per Trip (Add-on)'}}
-    },
-    plugins:{legend:{position:'bottom',labels:{font:{size:10}}}}
-  }
-});
-
-new Chart(document.getElementById('c5_tiers'), {
+// ═══ STUDY 5: HOST RETENTION ═══
+new Chart(document.getElementById('hostPainChart'), {
   type: 'bar',
   data: {
-    labels: ['Basic\n(Current)', 'Standard\n($9/trip)', 'Premium\n($15/trip)', 'Concierge\n($22/trip)'],
-    datasets: [
-      {label:'Preferred Tier', data:[18,27,38,17], backgroundColor:[COLORS.text2, COLORS.teal, COLORS.violet, COLORS.gold]},
-    ]
+    labels: ["Damage claim disputes","Commission/fee increases","Guest communication gaps","Late returns","Pricing algorithm changes","Insurance payout speed","Vehicle wear & tear","Platform support quality"],
+    datasets: [{
+      label:'Pain Severity Index',
+      data: [89,82,74,71,68,65,58,54],
+      backgroundColor: [COLORS.red, COLORS.red, COLORS.gold, COLORS.gold, COLORS.teal, COLORS.teal, COLORS.text2, COLORS.text2],
+    }]
   },
   options: {
-    responsive:true, maintainAspectRatio:false,
-    scales:{y:{beginAtZero:true,max:50,ticks:{callback:v=>v+'%'}},x:{ticks:{font:{size:11}}}},
+    indexAxis:'y', responsive:true, maintainAspectRatio:false,
+    scales:{x:{beginAtZero:true,max:100},y:{ticks:{font:{size:11}}}},
     plugins:{legend:{display:false}}
   }
 });
 
-new Chart(document.getElementById('c5_wtp_seg'), {
-  type: 'bar',
-  data: {
-    labels: ['Single-car host','Multi-car (2–4)','Fleet (5–10)','Power fleet (11+)'],
-    datasets: [
-      {label:'Optimal Price Point', data:[11.50,14.50,16.80,19.20], backgroundColor:COLORS.violet},
-      {label:'Max Acceptable', data:[16,19,23,27], backgroundColor:COLORS.teal},
-    ]
-  },
-  options: {
-    responsive:true, maintainAspectRatio:false,
-    scales:{y:{beginAtZero:true,max:30,ticks:{callback:v=>'$'+v}},x:{ticks:{font:{size:11}}}},
-    plugins:{legend:{position:'bottom'}}
-  }
-});
-
-new Chart(document.getElementById('c5_scatter'), {
+new Chart(document.getElementById('hostScatterChart'), {
   type: 'scatter',
   data: {
     datasets: [
-      {label:'Economy (<$25K)', data:[{x:15,y:11}], backgroundColor:COLORS.text2, pointRadius:16},
-      {label:'Mid-range ($25–45K)', data:[{x:35,y:14.5}], backgroundColor:COLORS.teal, pointRadius:18},
-      {label:'Premium ($45–75K)', data:[{x:60,y:18}], backgroundColor:COLORS.blue, pointRadius:15},
-      {label:'Luxury ($75K+)', data:[{x:85,y:23}], backgroundColor:COLORS.violet, pointRadius:13},
-      {label:'Trucks/SUVs', data:[{x:48,y:16}], backgroundColor:COLORS.gold, pointRadius:14},
-      {label:'Tesla/EV', data:[{x:72,y:21}], backgroundColor:COLORS.coral, pointRadius:14},
+      {label:'Fleet Entrepreneurs', data:[{x:72,y:48}], backgroundColor:COLORS.violet, pointRadius:16},
+      {label:'Side Hustlers', data:[{x:68,y:71}], backgroundColor:COLORS.teal, pointRadius:18},
+      {label:'Car Enthusiasts', data:[{x:54,y:74}], backgroundColor:COLORS.gold, pointRadius:14},
+      {label:'Frustrated Exiters', data:[{x:82,y:28}], backgroundColor:COLORS.red, pointRadius:12},
     ]
   },
   options: {
     responsive:true, maintainAspectRatio:false,
     scales:{
-      x:{title:{display:true,text:'Vehicle Value (Percentile) →',font:{weight:'600'}},min:0,max:100},
-      y:{title:{display:true,text:'Optimal Price Point ($) →',font:{weight:'600'}},min:5,max:28,ticks:{callback:v=>'$'+v}}
+      x:{title:{display:true,text:'Earnings Importance →',font:{weight:'600'}},min:40,max:100},
+      y:{title:{display:true,text:'Platform Satisfaction →',font:{weight:'600'}},min:15,max:90}
     },
     plugins:{
       legend:{position:'bottom',labels:{font:{size:10},padding:10}},
-      tooltip:{callbacks:{label:ctx=>`${ctx.dataset.label}: $${ctx.parsed.y}/trip`}}
+      tooltip:{callbacks:{label:ctx=>`${ctx.dataset.label}: Earnings Importance ${ctx.parsed.x}, Satisfaction ${ctx.parsed.y}`}}
     }
   }
 });
